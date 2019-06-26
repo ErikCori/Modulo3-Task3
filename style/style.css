@@ -1,0 +1,61 @@
+.container {
+	max-width: 100vw;
+}
+
+/*-----Header-----*/
+.fixed-top {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+header > div,
+.fixed-bottom {
+	background-color: black;
+}
+
+#back{
+	background-color: #358728;
+}
+
+.logo {
+	width: 2.4em;
+	margin: 10px 0;
+}
+
+h1{
+	color: white;
+	font-size: 1.5em;
+	margin: 15px 0;
+}
+.btn{
+	height: 14vh;
+	color: black;
+	background-color: #BAE6B3;
+}
+
+#back-btn {
+	display: none;
+	padding: 5px 10px 5px 0;
+	height: 43px;
+}
+
+
+
+#back-btn1 {
+	margin-top: -10px;
+	padding: 5px 10px 5px 0;
+	height: 43px;
+}
+
+/*------html-------*/
+
+section {
+	padding-top: 101px;
+	padding-bottom: 80px;
+	overflow: auto;
+}
+
+section > div > p {
+	text-align: center;
+	padding-top: 8px;
+}
