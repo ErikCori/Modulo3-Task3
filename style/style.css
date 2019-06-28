@@ -42,7 +42,7 @@ h1{
 
 
 #back-btn1 {
-	margin-top: -10px;
+	
 	padding: 5px 10px 5px 0;
 	height: 43px;
 }
@@ -58,4 +58,8 @@ section {
 section > div > p {
 	text-align: center;
 	padding-top: 8px;
+}
+
+.card-footer{
+	margin-top: -90px;
 }

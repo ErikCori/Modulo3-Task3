@@ -100,21 +100,21 @@
 				<img class="logo" src="style/images/nysl_logo.png">
 			</div>
 			<div class="col-8 text-center">
-				<h1 v-if="section == 'home'" class="align-middle">Northside Youth Soccer League</h1>
-				<h1 v-if="section == 'game_info'" class="align-middle">Game Information</h1>
-				<h1 v-if="section == 'game_loc'" class="align-middle">Game Locations</h1>
-				<h1 v-if="section == 'contact'" class="align-middle">Contact</h1>
+				<h1 v-show="section == 'home'" class="align-middle">Northside Youth Soccer League</h1>
+				<h1 v-show="section == 'game_info'" class="align-middle">Game Information</h1>
+				<h1 v-show="section == 'game_loc'" class="align-middle">Game Locations</h1>
+				<h1 v-show="section == 'contact'" class="align-middle">Contact</h1>
 			</div>
 			<div class="col-2">
 			</div>
 			<div id="back" class="col-12">
-				<a  v-if="section == 'home'"></a>
-				<a  v-if="section == 'game_info'" onclick="cambiarSection('home')"><img src="style/images/back.png" id="back-btn1" class="float-left"></a>
-				<a  v-if="section == 'game_loc'" onclick="cambiarSection('home')"><img src="style/images/back.png" id="back-btn1" class="float-left"></a>
-				<a  v-if="section == 'contact'" onclick="cambiarSection('home')"><img src="style/images/back.png" id="back-btn1" class="float-left"></a>
+				<a  v-show="section == 'home'"></a>
+				<a  v-show="section == 'game_info'" onclick="cambiarSection('home')"><img src="style/images/back.png" id="back-btn1" class="float-left"></a>
+				<a  v-show="section == 'game_loc'" onclick="cambiarSection('home')"><img src="style/images/back.png" id="back-btn1" class="float-left"></a>
+				<a  v-show="section == 'contact'" onclick="cambiarSection('home')"><img src="style/images/back.png" id="back-btn1" class="float-left"></a>
 			</div>
 		</header>
-		<div v-if="section == 'home'">
+		<div v-show="section == 'home'">
 			<section>
 				<a class="col-12 btn btn-secundary" onclick="cambiarSection('game_info')" role="button">
 					<h3 class="float-left">Game Information</h3>
@@ -127,8 +127,8 @@
 				</a>
 			</section>
 		</div>
-		<div v-if="section == 'game_info'">
-			<section id="dropMonths">
+		<div v-show="section == 'game_info'">
+			<section>
 				<div class="col-12">
 					<div class="col-12 col-sm-8 offset-sm-2">
 						<div class="text-center">
@@ -141,7 +141,7 @@
 				</div>
 			</section>
 		</div>
-		<div v-if="section == 'game_loc'">
+		<div v-show="section == 'game_loc'">
 			<section>
 				<div class="col-12 col-sm-8 offset-sm-2 accordion" id="locationAccord">
 					<button class="btn btn-block" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1" id="heading1">
@@ -183,11 +183,11 @@
 				</div>
 			</section>
 		</div>
-		<div v-if="section == 'contact'">
+		<div v-show="section == 'contact'">
 			<section class="row" id="home">
 				<div class="col-12">
 					<p>
-						<b>More Info:</b> <a href="#">www.nysl.com</a>.<br>
+						<b>More Info:</b> <a href="#" onclick="cambiarSection('home')">www.nysl.com</a>.<br>
 						<b>Mail to:</b> <a href="mailto:michael.randall@chisoccer.org">Michael Randall, League Coordinator</a>.
 					</p>
 				</div>
@@ -197,7 +197,7 @@
 	</div>
 
 	<footer class="col-12 card-footer">
-		<p class="text-center">®2019 TGIF |All Rights Reserved</p>
+		<p class="text-center">®2019 FullStack |All Rights Reserved</p>
 	</footer>
 	<!--<div id="message">
       <h2>Welcome</h2>
