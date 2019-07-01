@@ -90,6 +90,7 @@
 				border-top: 16px solid #ffa100;
 			}
 		}
+
 	</style>
 </head>
 
@@ -108,10 +109,10 @@
 			<div class="col-2">
 			</div>
 			<div id="back" class="col-12">
-				<a  v-show="section == 'home'"></a>
-				<a  v-show="section == 'game_info'" onclick="cambiarSection('home')"><img src="style/images/back.png" id="back-btn1" class="float-left"></a>
-				<a  v-show="section == 'game_loc'" onclick="cambiarSection('home')"><img src="style/images/back.png" id="back-btn1" class="float-left"></a>
-				<a  v-show="section == 'contact'" onclick="cambiarSection('home')"><img src="style/images/back.png" id="back-btn1" class="float-left"></a>
+				<a v-show="section == 'home'"></a>
+				<a v-show="section == 'game_info'" onclick="cambiarSection('home')"><img src="style/images/back.png" id="back-btn1" class="float-left"></a>
+				<a v-show="section == 'game_loc'" onclick="cambiarSection('home')"><img src="style/images/back.png" id="back-btn1" class="float-left"></a>
+				<a v-show="section == 'contact'" onclick="cambiarSection('home')"><img src="style/images/back.png" id="back-btn1" class="float-left"></a>
 			</div>
 		</header>
 		<div v-show="section == 'home'">
@@ -133,10 +134,25 @@
 					<div class="col-12 col-sm-8 offset-sm-2">
 						<div class="text-center">
 							<select id="dropMonths">
-								<option value="september">Select a Month</option>
+								<option value="">All</option>
 							</select>
 						</div>
-						<table class="table table-bordered" id="table-data"></table>
+						<table class="table table-bordered">
+							<thead class="thead">
+								<tr>
+									<th>Date</th>
+									<th>Teams</th>
+									<th>Location</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr v-for="partido in partidos">
+									<td class="date">{{partido.date}} At <br> {{partido.times}}</td>
+									<td class="state">{{partido.teams}}</td>
+									<td class="location"><a v-bind:href= 'partido["url-location"]'>{{partido.location}}</a></td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 				</div>
 			</section>
@@ -242,15 +258,16 @@
 				document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
 			}
 		});
+
 	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.js"></script>
-	<script src="script/mainVue.js"></script>
 	<script src="script/nysl_partidos.js"></script>
+	<script src="script/mainVue.js"></script>
 	<script src="script/main.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-	
+
 </body>
 
 </html>
