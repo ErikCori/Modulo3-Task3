@@ -1,0 +1,35 @@
+<div v-show="section == 'game_info'">
+	<section>
+		<div class="col-12">
+			<div class="col-12 col-sm-8 offset-sm-2">
+				<div class="text-center">
+					<select id="dropMonths">
+						<option value="">All</option>
+					</select>
+				</div>
+				<div class="col-12 col-sm-8 offset-sm-2 accordion" id="infoAccord">
+					<button v-for="partido in partidos" class="btn btn-block" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1" id="heading1">
+						<h5 class="float-left pt-1 pl-3">
+								{{partido.teams}}<br>
+								{{partido.date}} At {{partido.times}}<br>
+								{{partido.location}}
+						</h5>
+					</button>
+					<div id="collapse1" class="collapse justify-content-center" aria-labelledby="heading1" data-parent="#infoAccord">
+						<object class="mapp" data= 'partido["url-location"]' width="280" height="280"></object>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+<tbody>
+								<tr v-for="partido in partidos">
+									<td class="date">{{partido.date}} At <br> {{partido.times}}</td>
+									<td class="state">{{partido.teams}}</td>
+									<td class="location"><a v-bind:href= 'partido["url-location"]'>{{partido.location}}</a></td>
+								</tr>
+							</tbody>
+
+
+<partido v-for="partido in partidos" :date="partido.date" :times="partido.times" :teams="partido.teams" :location="partido.location" :url="partido.url"></partido>

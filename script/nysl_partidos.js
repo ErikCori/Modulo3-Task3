@@ -7,7 +7,7 @@ var data =
             "teams": "U1 and U4",
             "location": "Aj Katzenmaier",
             "times": "9:30 a.m.",
-						"url-location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.6540278726093!2d-87.63123838489135!3d41.90029707200436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34e07f6bac3%3A0x68a82e5d59952c86!2s24+W+Walton+St%2C+Chicago%2C+IL+60610%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1528809062346"
+						"url": "https://www.google.com/maps?ll=41.900292,-87.62905&z=16&t=m&hl=es-419&gl=AR&mapclient=embed&q=24+W+Walton+St+Chicago,+IL+60610+EE.+UU."
         },
         {
             "month": "september",
@@ -15,7 +15,7 @@ var data =
             "teams": "U3 and U2",
             "location": "Greenbay",
             "times": "1:00 p.m.",
-						"url-location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.0256428537773!2d-87.64002868489094!3d41.91380747115841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34073f306a3%3A0x9e1726bbf8f23f0e!2s1734+N+Orleans+St%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1528809454684"
+						"url": "https://www.google.com/maps?ll=41.913802,-87.637839&z=16&t=m&hl=es-419&gl=AR&mapclient=embed&q=1734+N+Orleans+St+Chicago,+IL+60614+EE.+UU."
         },
         {
             "month": "september",
@@ -23,7 +23,7 @@ var data =
             "teams": "U5 and U6",
             "location": "Howard A Yeager",
             "times": "9:30 a.m.",
-						"url-location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.5854973846967!2d-87.66511458489059!3d41.92326857056588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd2e37f9b8d2d%3A0x62ad8b907dd755d6!2s2245+N+Southport+Ave%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1528809503672"
+						"url":"https://www.google.com/maps?ll=41.923265,-87.662926&z=16&t=m&hl=es-419&gl=AR&mapclient=embed&q=2245+N+Southport+Ave+Chicago,+IL+60614+EE.+UU."
         },
         {
             "month": "september",
@@ -31,7 +31,7 @@ var data =
             "teams": "U6 and U1",
             "location": "Marjorie P Hart",
             "times": "1:00 p.m.",
-						"url-location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.2916358899315!2d-87.64808498489039!3d41.92958427017035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd30f2630e551%3A0x3e719e44a5cef714!2s2625+N+Orchard+St%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1528809657719"
+						"url": "https://www.google.com/maps?ll=41.929578,-87.645898&z=16&t=m&hl=es-419&gl=AR&mapclient=embed&q=2625+N+Orchard+St+Chicago,+IL+60614+EE.+UU."
         },
         {
             "month": "september",
@@ -39,7 +39,7 @@ var data =
             "teams": "U2 and U4",
             "location": "North",
             "times": "9:30 a.m.",
-						"url-location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.3363025419712!2d-87.64835588489113!3d41.90712867157664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd33af13a8945%3A0xb6ad1ec2b6f379ba!2s1409+N+Ogden+Ave%2C+Chicago%2C+IL+60610%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1528809727561"
+						"url": "https://www.google.com/maps/place/1409+N+Ogden+Ave,+Chicago,+IL+60610,+EE.+UU./@41.907097,-87.646188,16z/data=!4m5!3m4!1s0x880fd33af0e6ccc3:0x26c81c1d557667da!8m2!3d41.9070965!4d-87.6461883?hl=es-419"
         },
         {
             "month": "september",
@@ -47,7 +47,7 @@ var data =
             "teams": "U3 and U5",
             "location": "Aj Katzenmaier",
             "times": "1:00 p.m.",
-						"url-location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.6540278726093!2d-87.63123838489135!3d41.90029707200436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34e07f6bac3%3A0x68a82e5d59952c86!2s24+W+Walton+St%2C+Chicago%2C+IL+60610%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1528809062346"
+						"url": "https://www.google.com/maps?ll=41.900292,-87.62905&z=16&t=m&hl=es-419&gl=AR&mapclient=embed&q=24+W+Walton+St+Chicago,+IL+60610+EE.+UU."
         },
         {
             "month": "september",
@@ -55,7 +55,7 @@ var data =
             "teams": "U1 and U3",
             "location": "South",
             "times": "9:30 a.m.",
-						"url-location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.7478346106604!2d-87.65355788489074!3d41.91977927078447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd3196fb41dc7%3A0x970be7f7d6336df5!2s2101+N+Fremont+St%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1528809778734"
+						"url": "https://www.google.com/maps?ll=41.919777,-87.651367&z=16&t=m&hl=es-419&gl=AR&mapclient=embed&q=2101+N+Fremont+St+Chicago,+IL+60614+EE.+UU."
         },
         {
             "month": "september",
@@ -63,7 +63,7 @@ var data =
             "teams": "U2 and U6",
             "location": "Howard A Yeager",
             "times": "1:00 p.m.",
-						"url-location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.5854973846967!2d-87.66511458489059!3d41.92326857056588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd2e37f9b8d2d%3A0x62ad8b907dd755d6!2s2245+N+Southport+Ave%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1528809503672"
+						"url": "https://www.google.com/maps?ll=41.923265,-87.662926&z=16&t=m&hl=es-419&gl=AR&mapclient=embed&q=2245+N+Southport+Ave+Chicago,+IL+60614+EE.+UU."
         },
         {
             "month": "september",
@@ -71,7 +71,7 @@ var data =
             "teams": "U4 and U5",
             "location": "Greenbay",
             "times": "9:30 a.m.",
-						"url-location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.0256428537773!2d-87.64002868489094!3d41.91380747115841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34073f306a3%3A0x9e1726bbf8f23f0e!2s1734+N+Orleans+St%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1528809454684"
+						"url": "https://www.google.com/maps?ll=41.913802,-87.637839&z=16&t=m&hl=es-419&gl=AR&mapclient=embed&q=1734+N+Orleans+St+Chicago,+IL+60614+EE.+UU."
         },
         {
             "month": "october",
@@ -79,7 +79,7 @@ var data =
             "teams": "U2 and U5",
             "location": "Marjorie P Hart",
             "times": "9:30 a.m.",
-						"url-location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.2916358899315!2d-87.64808498489039!3d41.92958427017035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd30f2630e551%3A0x3e719e44a5cef714!2s2625+N+Orchard+St%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1528809657719"
+						"url": "https://www.google.com/maps?ll=41.929578,-87.645898&z=16&t=m&hl=es-419&gl=AR&mapclient=embed&q=2625+N+Orchard+St+Chicago,+IL+60614+EE.+UU."
         },
         {
             "month": "october",
@@ -87,7 +87,7 @@ var data =
             "teams": "U1 and U6",
             "location": "South",
             "times": "1:00 p.m.",
-						"url-location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.7478346106604!2d-87.65355788489074!3d41.91977927078447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd3196fb41dc7%3A0x970be7f7d6336df5!2s2101+N+Fremont+St%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1528809778734"
+						"url": "https://www.google.com/maps?ll=41.919777,-87.651367&z=16&t=m&hl=es-419&gl=AR&mapclient=embed&q=2101+N+Fremont+St+Chicago,+IL+60614+EE.+UU."
         },
         {
             "month": "october",
@@ -95,7 +95,7 @@ var data =
             "teams": "U3 and U4",
             "location": "Howard A Yeager",
             "times": "9:30 a.m.",
-						"url-location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.5854973846967!2d-87.66511458489059!3d41.92326857056588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd2e37f9b8d2d%3A0x62ad8b907dd755d6!2s2245+N+Southport+Ave%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1528809503672"
+						"url": "https://www.google.com/maps?ll=41.923265,-87.662926&z=16&t=m&hl=es-419&gl=AR&mapclient=embed&q=2245+N+Southport+Ave+Chicago,+IL+60614+EE.+UU."
         },
         {
             "month": "october",
@@ -103,7 +103,7 @@ var data =
             "teams": "U5 and U1",
             "location": "Greenbay",
             "times": "1:00 p.m.",
-						"url-location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.0256428537773!2d-87.64002868489094!3d41.91380747115841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34073f306a3%3A0x9e1726bbf8f23f0e!2s1734+N+Orleans+St%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1528809454684"
+						"url": "https://www.google.com/maps?ll=41.913802,-87.637839&z=16&t=m&hl=es-419&gl=AR&mapclient=embed&q=1734+N+Orleans+St+Chicago,+IL+60614+EE.+UU."
         },
         {
             "month": "october",
@@ -111,7 +111,7 @@ var data =
             "teams": "U6 and U3",
             "location": "North",
             "times": "9:30 a.m.",
-						"url-location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.3363025419712!2d-87.64835588489113!3d41.90712867157664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd33af13a8945%3A0xb6ad1ec2b6f379ba!2s1409+N+Ogden+Ave%2C+Chicago%2C+IL+60610%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1528809727561"
+						"url": "https://www.google.com/maps/place/1409+N+Ogden+Ave,+Chicago,+IL+60610,+EE.+UU./@41.907097,-87.646188,16z/data=!4m5!3m4!1s0x880fd33af0e6ccc3:0x26c81c1d557667da!8m2!3d41.9070965!4d-87.6461883?hl=es-419"
         },
         {
             "month": "october",
@@ -119,7 +119,7 @@ var data =
             "teams": "U2 and U4",
             "location": "Marjorie P Hart",
             "times": "1:00 p.m.",
-						"url-location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.2916358899315!2d-87.64808498489039!3d41.92958427017035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd30f2630e551%3A0x3e719e44a5cef714!2s2625+N+Orchard+St%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1528809657719"
+						"url": "https://www.google.com/maps?ll=41.929578,-87.645898&z=16&t=m&hl=es-419&gl=AR&mapclient=embed&q=2625+N+Orchard+St+Chicago,+IL+60614+EE.+UU."
         },
         {
             "month": "october",
@@ -127,7 +127,7 @@ var data =
             "teams": "U3 and U1",
             "location": "Aj Katzenmaier",
             "times": "9:30 a.m.",
-						"url-location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.6540278726093!2d-87.63123838489135!3d41.90029707200436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34e07f6bac3%3A0x68a82e5d59952c86!2s24+W+Walton+St%2C+Chicago%2C+IL+60610%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1528809062346"
+						"url": "https://www.google.com/maps?ll=41.900292,-87.62905&z=16&t=m&hl=es-419&gl=AR&mapclient=embed&q=24+W+Walton+St+Chicago,+IL+60610+EE.+UU."
         },
         {
             "month": "october",
@@ -135,7 +135,7 @@ var data =
             "teams": "U5 and U6",
             "location": "Howard A Yeager",
             "times": "1:00 p.m.",
-						"url-location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.5854973846967!2d-87.66511458489059!3d41.92326857056588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd2e37f9b8d2d%3A0x62ad8b907dd755d6!2s2245+N+Southport+Ave%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1528809503672"
+						"url": "https://www.google.com/maps?ll=41.923265,-87.662926&z=16&t=m&hl=es-419&gl=AR&mapclient=embed&q=2245+N+Southport+Ave+Chicago,+IL+60614+EE.+UU."
         }
     ]
 }
