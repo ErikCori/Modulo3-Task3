@@ -1,7 +1,6 @@
 Vue.component('partido', {
 	props: ['date', 'times', 'teams', 'location', 'url'],
-	template:
-	`
+	template: `
 		<tr>
 			<td>{{date}} {{times}}</td>
 			<td>{{teams}}</td>	
@@ -11,15 +10,22 @@ Vue.component('partido', {
 })
 
 var app = new Vue({
-    el: '#app',
-    data: {
-        section: "home",
-				partidos : [],
-    }
+	el: '#app',
+	data: {
+		section: "home",
+		partidos: [],
+	},
+	methods: {
+		selectPlace(url, index){
+			$("#mapSelected").attr("src", url);
+			$(".btn-place-class").removeClass("actualClass");
+			$("#btn-place" + index).addClass("actualClass");
+		}
+	}
 })
 
 app.partidos = data.partidos;
-	
-function cambiarSection(nuevaSeccion){
-  app.section = nuevaSeccion;
+
+function cambiarSection(nuevaSeccion) {
+	app.section = nuevaSeccion;
 }

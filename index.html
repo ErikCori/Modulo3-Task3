@@ -91,7 +91,6 @@
 				border-top: 16px solid #ffa100;
 			}
 		}
-
 	</style>
 </head>
 
@@ -129,34 +128,36 @@
 				</a>
 			</section>
 		</div>
-		<div v-show="section == 'game_info'">
+		<div class="row" v-show="section == 'game_info'">
 			<section>
-				<div class="col-12">
-					<div class="col-12 col-sm-8 offset-sm-2">
-						<div class="text-center">
-							<h5>Month:
-								<select id="dropMonths">
-									<option value="">All</option>
-								</select>
-							</h5>
-						</div>
-						<table class="table">
-							<thead class="thead">
-								<tr>
-									<th>Date</th>
-									<th>Teams</th>
-									<th>Location</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr v-for="partido in partidos">
-									<td class="date">{{partido.date}} At <br> {{partido.times}}</td>
-									<td class="state">{{partido.teams}}</td>
-									<td class="location"><a v-bind:href="partido.url">{{partido.location}}</a></td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
+				<div class="text-center">
+					<h5>Month:
+						<select id="dropMonths">
+							<option value="">All</option>
+						</select>
+					</h5>
+				</div>
+				<div id="table-data">
+					<table class="table">
+						<thead class="thead">
+							<tr>
+								<th>Date</th>
+								<th>Teams</th>
+								<th>Location</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr v-for="(partido, index) in partidos">
+								<td>{{partido.date}} At <br> {{partido.times}}</td>
+								<td>{{partido.teams}}</td>
+								<td><a class="showPortrait" v-bind:href="partido.url">{{partido.location}}</a></td>
+								<td><a class="showLandscape btn-place-class" v-bind:id="'btn-place' + index" v-on:click="selectPlace(partido.url, index)">{{partido.location}}</a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="showLandscape" style="width: 50%">
+					<iframe id="mapSelected" src="https://www.google.com/maps/d/embed?mid=1SID7QdfDWObUWMXQOsC6PyJM3FKPEW9K"></iframe>
 				</div>
 			</section>
 		</div>
@@ -254,22 +255,25 @@
 
 			try {
 				let app = firebase.app();
-				let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+				let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] ===
+					'function');
 				document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
 			} catch (e) {
 				console.error(e);
 				document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
 			}
 		});
-
 	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.js"></script>
 	<script src="script/nysl_partidos.js"></script>
 	<script src="script/mainVue.js"></script>
 	<script src="script/main.js"></script>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous">
+	</script>
 
 </body>
 
