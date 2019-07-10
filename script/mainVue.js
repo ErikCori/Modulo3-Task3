@@ -16,8 +16,8 @@ var app = new Vue({
 		partidos: [],
 	},
 	methods: {
-		selectPlace(url, index){
-			$("#mapSelected").attr("src", url);
+		selectPlace(url, index) {
+			$("#map-selected").attr("src", url);
 			$(".btn-place-class").removeClass("actualClass");
 			$("#btn-place" + index).addClass("actualClass");
 		}
